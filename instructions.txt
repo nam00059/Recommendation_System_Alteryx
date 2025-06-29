@@ -1,0 +1,31 @@
+## Intructions for setup:
+
+**Snowflake Setup:**  
+   - Store your transaction data in **Snowflake**.  
+     📂 Data link: [Instacart Market Basket Analysis Dataset (Kaggle)](https://www.kaggle.com/datasets/psparks/instacart-market-basket-analysis)  
+   - Configure Alteryx In-DB tools with appropriate credentials.  
+   - _(Alternatively, download files from Kaggle and read them directly into Alteryx if you don't want to connect with Snowflake)._
+
+2. **Alteryx Workflow Execution:**  
+   - Run the Alteryx workflow to preprocess data and generate association rules.
+   - Export the final results (CSV / Parquet) for use in the Streamlit app.
+
+3. **Streamlit Application:**  
+   - Use `instacart.py` to run the Streamlit app:
+     ```bash
+     streamlit run instacart.py
+     ```
+   - Make sure the data file generated from Alteryx is available in the app’s expected path.
+
+---
+
+### 🧰 **Key Tools and Technologies**
+
+| Tool                    | Purpose                                 |
+|-------------------------|-----------------------------------------|
+| ❄️ **Snowflake**          | Cloud-based data warehousing & storage  |
+| 🔷 **Alteryx**             | Data preprocessing, Market Basket Analysis (Apriori), product mapping |
+| 🚀 **Streamlit**           | Web-based interactive product recommendation application |
+| 🐍 **Python**              | Fuzzy matching, data handling, and recommendation logic |
+
+---
